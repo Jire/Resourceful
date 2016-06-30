@@ -2,11 +2,12 @@ group 'org.jire.resourceful'
 version '0.1'
 
 buildscript {
+    ext.kotlin_version = '1.0.2-1'
     repositories {
         mavenCentral()
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.2-1"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
@@ -18,5 +19,5 @@ repositories {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:1.0.2-1"
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
